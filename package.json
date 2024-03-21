@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "private": true,
+
+  "scripts": {
+    "publish": "lerna publish"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@anthill/core": "^0.0.1"
+  },
+  "devDependencies": {
+    "lerna": "^7.1.2"
+  }
+}

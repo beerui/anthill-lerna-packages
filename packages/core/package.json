@@ -1,0 +1,100 @@
+{
+  "name": "@anthill/core",
+  "version": "0.0.40",
+  "description": "蚂蚁窝前端基础组件库",
+  "author": "anthill",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.anthill.net/framework/fecc/frontend/anthill-lerna-packages/-/tree/master/packages/core"
+  },
+  "bugs": "http://gitlab.anthill.net/framework/fecc/frontend/anthill-lerna-packages/-/issues",
+  "exports": {
+    ".": {
+      "require": "./lib/index.umd.js",
+      "import": "./lib/index.mjs"
+    }
+  },
+  "lerna": {
+    "command": {
+      "publish": {
+        "assets": [
+          "lib/*",
+          "README.md",
+          "package.json"
+        ]
+      }
+    }
+  },
+  "main": "./lib/index.js",
+  "module": "./lib/index.mjs",
+  "unpkg": "./lib/index.umd.js",
+  "jsdelivr": "./lib/index.umd.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "clean:lib": "rimraf lib",
+    "clean:coverage": "rimraf coverage",
+    "dev": "vite --mode dev",
+    "build": "pnpm clean:lib && npm run pre-build && vite build --mode prod && vue-tsc --noEmit",
+    "pre-build": "node ./src/bin/pre-build.js",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "pnpm clean:coverage && vitest --coverage --mode test"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.7.1",
+    "vue": "^2.0.0 || >=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@wangeditor/editor": "^5.1.23",
+    "@wangeditor/editor-for-vue": "^5.1.12",
+    "stylelint-less": "^3.0.1",
+    "tdesign-vue-next": "^1.8.0",
+    "vite-plugin-css-injected-by-js": "^3.3.1",
+    "vite-plugin-dts": "^3.7.1",
+    "vue-router": "~4.1.6"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.31.0",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^6.19.1",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vitejs/plugin-vue-jsx": "^2.1.1",
+    "@vitest/coverage-v8": "^1.2.1",
+    "@vue/compiler-sfc": "^3.3.8",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.28.0",
+    "happy-dom": "^7.7.0",
+    "husky": "^8.0.2",
+    "less": "^4.2.0",
+    "lodash": "^4.17.21",
+    "rimraf": "^3.0.2",
+    "typescript": "^5.3.2",
+    "vite": "^3.2.4",
+    "vitest": "^1.2.1",
+    "vue": "^3.2.45",
+    "vue-tsc": "^1.8.27"
+  },
+  "volta": {
+    "node": "14.19.1"
+  }
+}

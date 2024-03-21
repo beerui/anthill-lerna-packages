@@ -1,0 +1,23 @@
+{
+  "name": "@anthill/style",
+  "version": "0.0.40",
+  "description": "基础样式包",
+  "author": "viven <17706500512@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/style.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://192.168.4.202:4873/"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@anthill/style.test.js"
+  },
+  "gitHead": "6cfdaf239002a62267c700fc12bce320822686bb"
+}

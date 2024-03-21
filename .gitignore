@@ -1,0 +1,9 @@
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+.history/
+
+**/lib/
+**/.idea/
+/packages/core/lib/
