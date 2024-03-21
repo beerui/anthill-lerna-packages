@@ -1,6 +1,6 @@
 {
-  "name": "@anthill/core",
-  "version": "0.0.3",
+  "name": "@brewer/anthill-core",
+  "version": "0.0.0",
   "description": "蚂蚁窝前端基础组件库",
   "author": "MoTou",
   "license": "MIT",
@@ -97,5 +97,5 @@
   "volta": {
     "node": "14.19.1"
   },
-  "gitHead": "13c05d29ca13a58f0751feda58603603e0f21c5e"
+  "gitHead": "d20908e9e863e66bfa2c589fbbd3542b071646c0"
 }

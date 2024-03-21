@@ -1,6 +1,6 @@
 {
-  "name": "@anthill/core-biz",
-  "version": "0.0.3",
+  "name": "@brewer/anthill-core-biz",
+  "version": "0.0.0",
   "description": "业务组件",
   "author": "viven <17706500512@163.com>",
   "type": "module",
@@ -40,5 +40,5 @@
     "vue-clipboard3": "^2.0.0",
     "vue-tsc": "^1.8.25"
   },
-  "gitHead": "13c05d29ca13a58f0751feda58603603e0f21c5e"
+  "gitHead": "d20908e9e863e66bfa2c589fbbd3542b071646c0"
 }

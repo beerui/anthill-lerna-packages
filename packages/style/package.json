@@ -1,6 +1,6 @@
 {
-  "name": "@anthill/style",
-  "version": "0.0.3",
+  "name": "@brewer/anthill-style",
+  "version": "0.0.0",
   "description": "基础样式包",
   "author": "viven <17706500512@163.com>",
   "homepage": "",
@@ -16,5 +16,5 @@
   "scripts": {
     "test": "node ./__tests__/@anthill/style.test.js"
   },
-  "gitHead": "13c05d29ca13a58f0751feda58603603e0f21c5e"
+  "gitHead": "d20908e9e863e66bfa2c589fbbd3542b071646c0"
 }
