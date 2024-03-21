@@ -1,6 +1,6 @@
 {
   "name": "@brewer/anthill-core",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.0",
   "description": "蚂蚁窝前端基础组件库",
   "author": "MoTou",
   "license": "MIT",
