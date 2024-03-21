@@ -1,12 +1,9 @@
 {
   "name": "@anthill/core-biz",
-  "version": "0.0.40",
+  "version": "0.0.1",
   "description": "业务组件",
   "author": "viven <17706500512@163.com>",
   "type": "module",
-  "publishConfig": {
-    "registry": "http://192.168.4.202:4873/"
-  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",

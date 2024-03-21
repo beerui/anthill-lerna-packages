@@ -1,6 +1,6 @@
 {
   "name": "@anthill/style",
-  "version": "0.0.40",
+  "version": "0.0.1",
   "description": "基础样式包",
   "author": "viven <17706500512@163.com>",
   "homepage": "",
@@ -13,9 +13,6 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "registry": "http://192.168.4.202:4873/"
-  },
   "scripts": {
     "test": "node ./__tests__/@anthill/style.test.js"
   },
