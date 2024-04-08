@@ -24,7 +24,6 @@ export default ({ mode }: ConfigEnv): UserConfig => {
           'vue',
           'TDesign',
           'vue-router',
-          'lodash',
         ],
         output: {
           dir: 'lib',
@@ -32,7 +31,6 @@ export default ({ mode }: ConfigEnv): UserConfig => {
           globals: {
             'vue': 'Vue',
             'TDesign': 'TDesign',
-            'lodash': 'lodash',
             'vue-router': 'vue-router',
           },
         },
